@@ -10,8 +10,8 @@
     visibility: visible;
 
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity var(--transition-duration) var(--timing-function), 
-                visibility var(--transition-duration) var(--timing-function);
+    transition: opacity $transitionDuration $timingFunction, 
+                visibility $transitionDuration $timingFunction;
 }
 
 
@@ -22,11 +22,11 @@
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
     height: 581px;
-    background-color: var(--primary-white-color);
+    background-color: $whiteColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
-    transition: transform var(--transition-duration) var(--timing-function);
+    transition: transform $transitionDuration $timingFunction;
 }
 
 .modal-close-btn {
@@ -37,19 +37,19 @@
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: var(--primary-white-color);
+    background-color: $whiteColor;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition: fill var(--transition-duration) var(--timing-function);
-}
+    transition: fill $transitionDuration $timingFunction;
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-    fill: var(--accent-color);
+    &:hover,
+    &:focus {
+    fill: $accentColor;
+}
 }
 
 .is-hidden {
@@ -72,7 +72,7 @@
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
-    color: var(--primary-text-title);
+    color: $titleColor;
 }
 
 .form__label {
@@ -96,7 +96,11 @@
     border: 1px solid;
     border-color:  rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color var(--transition-duration) var(--timing-function);
+    transition: border-color $transitionDuration $timingFunction;
+
+    &:hover {
+    cursor: pointer;
+}
 }
 
 .form__icon-wrap {
@@ -109,20 +113,16 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    transition: fill var(--transition-duration) var(--timing-function);
-}
-
-.form__input:hover {
-    cursor: pointer;
+    transition: fill $transitionDuration $timingFunction;
 }
 
 .form__label:focus-within .form__input {
-    border-color: var(--accent-color);
+    border-color: $accentColor;
     outline: none;
 }
 
 .form__label:focus-within .form__icon {
-    fill: var(--accent-color);
+    fill: $accentColor;
 }
 
 .form__feedback{
@@ -133,16 +133,16 @@
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color var(--transition-duration) var(--timing-function);
+    transition: border-color $transitionDuration $timingFunction;
+
+    &:hover {
+    cursor: pointer;
+}
 }
 
 .form__label:focus-within .form__feedback {
-    border-color: var(--accent-color);
+    border-color: $accentColor;
     outline: none;
-}
-
-.form__feedback:hover {
-    cursor: pointer;
 }
 
 .form__feedback::placeholder {
@@ -170,7 +170,7 @@
 }
 
 .form__link {
-    color: var(--accent-color);
+    color: $accentColor;
 }
 
 .form__checkbox-label::after {
@@ -185,21 +185,21 @@
     height: 15px;
     border: 2px solid;
     border-radius: 2px;
-    border-color: var(--primary-logo-color);
-    transition: border-color var(--transition-duration) var(--timing-function);
+    border-color: $logoColor;
+    transition: border-color $transitionDuration $timingFunction;
 }
 
 .form__checkbox:focus+.form__checkbox-label::after{
-    border-color: var(--accent-color);
+    border-color: $accentColor;
     outline: none;
 }
 
 .form__checkbox:checked + .form__checkbox-label::after {
-    background-color: var(--accent-color);
+    background-color: $accentColor;
     background-image: url(../images/modal/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
-    border-color: var(--accent-color);
+    border-color: $accentColor;
 }
 
 
@@ -207,6 +207,12 @@
     padding: 10px 54px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid transparent;
+
+    &:hover,
+    &:focus {
+    cursor: pointer;
+    background-color: #188CE8;
+}
 }
 
 .form__button {

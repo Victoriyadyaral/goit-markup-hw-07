@@ -1,7 +1,8 @@
 /*OUR TEAM*/
 
 .our-team{
-    background-color: var(--second-main-background);
+    background-color: $mainBGcolor;
+;
 }
 
 .our-team__list {
@@ -16,14 +17,14 @@
 }
 
 .our-team-member {
-    background-color: var(--primary-white-color);
+    background-color: $whiteColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-member__name {    
     margin-bottom: 10px;
-    color: var(--primary-text-title);
+    color: $titleColor;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
@@ -44,13 +45,13 @@
 
 }
 
-.social-links__item:not(:last-child) {
-    margin-right: 10px;
-}
-
 .social-links__item {
     width: 44px;
     height: 44px;
+
+    &:not(:last-child) {
+    margin-right: 10px;
+}
 }
 
 .social-links__link {
@@ -62,23 +63,23 @@
     justify-content: center;
     align-items: center;
     transform: rotate(0deg);
-    transition: background-color var(--transition-duration) var(--timing-function),
-                transform var(--transition-duration) var(--timing-function);
+    transition: background-color $transitionDuration $timingFunction,
+                transform $transitionDuration $timingFunction;
 }
 
 .social-links__icon {
-    fill: var(--icon-color);
-    transition: fill var(--transition-duration) var(--timing-function);
+    fill: $iconColor;
+    transition: fill $transitionDuration $timingFunction;
 }
 
 .social-links__link:hover .social-links__icon,
 .social-links__link:focus .social-links__icon {
-    fill: var(--primary-white-color);
+    fill: $whiteColor;
 }
 
 .social-links__item .social-links__link:hover,
 .social-links__item .social-links__link:focus {
-    background-color: var(--accent-color);
+    background-color: $accentColor;
     outline: none;
     transform: rotate(360deg);
 }

@@ -1,7 +1,7 @@
 /*Стили для header*/
 
 .page-header {
-    background-color: var(--primary-white-color);
+    background-color: $whiteColor;
 }
 
 .page-header__navigation {
@@ -16,12 +16,12 @@
 }
 
 .logo__first-part {
-    color: var(--accent-color);
+    color: $accentColor;
     font-size: 26px;
 }
 
 .logo__second-part {
-    color: var(--primary-logo-color);
+    color: $logoColor;
     font-size: 26px;
 } 
 
@@ -37,26 +37,26 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: var(--primary-text-title);
+    color: $titleColor;
 
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
 
-    transition: color var(--transition-duration) var(--timing-function);
+    transition: color $transitionDuration $timingFunction;;
+
+    &:focus,
+    &:hover {
+    color: $accentColor;
+}
 }
 
 .site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav__link:focus,
-.site-nav__link:hover {
-    color: var(--accent-color);
-}
-
 .site-nav__link--current {
-    color: var(--accent-color);
+    color: $accentColor;
 }
 
 .site-nav__link--current::after {
@@ -68,7 +68,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--accent-color);
+    background-color: $accentColor;
 }
 
 /*CONTACT-HEADER*/
@@ -86,48 +86,48 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--primary-text-color);
+    color: $textColor;
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    transition: color var(--transition-duration) var(--timing-function);
+    transition: color $transitionDuration $timingFunction;
+    
+    &:focus,
+    &:hover {
+    color: $accentColor;
 }
-
-.contact__link:focus,
-.contact__link:hover {
-    color: var(--accent-color);
 }
 
 .contact__icon-mail {
     margin-right: 10px;
-    fill: var(--primary-text-color);
-    transition: fill var(--transition-duration) var(--timing-function);
+    fill: $textColor;
+    transition: fill $transitionDuration $timingFunction;
 }
 
 .contact__link-mail{
     display: flex;
     align-items: center;
-}
 
-.contact__link-mail:hover .contact__icon-mail,
-.contact__link-maill:focus .contact__icon-mail {
+    &:hover .contact__icon-mail,
+    &:focus .contact__icon-mail {
     fill: currentColor;
+}
 }
 
 .contact__icon-phone {
     margin-right: 10px;
-    fill: var(--primary-text-color);
-    transition: fill var(--transition-duration) var(--timing-function);
+    fill: $textColor;
+    transition: fill $transitionDuration $timingFunction;
 }
 
 .contact__link-phone{
     display: flex;
     align-items: center;
-}
 
-.contact__link-phone:hover .contact__icon-phone,
-.contact__link-phone:focus .contact__icon-phone {
+    &:hover .contact__icon-phone,
+    &:focus .contact__icon-phone {
     fill: currentColor;
+}
 }
 
 /*PORTFOLIO---HEADER*/

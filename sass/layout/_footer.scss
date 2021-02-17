@@ -4,7 +4,8 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: var(--footer-background-color);
+    background-color: $footerBGcolor;
+
 }
 .footer__contact {
     display: flex;
@@ -18,7 +19,7 @@
 }
 
 .logo__next-part {
-    color: var(--primary-white-color);
+    color: $whiteColor;
     font-size: 26px;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .address__link {
-    color: var(--primary-white-color);
+    color: $whiteColor;
     font-weight: 400;
 }
 
@@ -55,19 +56,20 @@
     font-weight: 700;
     line-height: 1.1419;
     text-transform: uppercase;
-    color: var(--primary-white-color);
+    color: $whiteColor;
 }
 
 .join-to-us {
     display: flex;
 }
-.join-to-us__item:not(:last-child) {
-    margin-right: 10px;
-}
 
 .join-to-us__item {
     width: 44px;
     height: 44px;
+
+    &:not(:last-child) {
+    margin-right: 10px;
+}
 }
 
 .join-to-us__link {
@@ -79,17 +81,17 @@
     justify-content: center;
     align-items: center;
 
-    transition: background-color var(--transition-duration) var(--timing-function);
+    transition: background-color $transitionDuration $timingFunction;
+
+    .join-to-us__item &:hover,
+    .join-to-us__item &:focus {
+    background-color: $accentColor;
+    outline: none;
+}
 }
 
 .join-to-us__icon {
-    fill: var(--primary-white-color);
-}
-
-.join-to-us__item .join-to-us__link:hover,
-.join-to-us__item .join-to-us__link:focus {
-    background-color: var(--accent-color);
-    outline: none;
+    fill: $whiteColor;
 }
 
 /*FOOTER-----SUBSCRIBE*/
@@ -110,12 +112,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: rgba(33,150,243,0);
-;
-}
 
-.footer-form__input:focus {
+    &:focus {
     background-color: transparent;
-    color: var(--primary-white-color);
+    color: $whiteColor;
+}
 }
 
 .footer-form__input::placeholder {
@@ -133,17 +134,18 @@
     overflow: hidden;
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    
+    &:focus,
+    &:hover {
+    cursor: pointer;
+}
 }
 
 .footer-form__icon-send {
     margin-left: 10px;
     transform: translate(0,0);  
-    transition: transform var(--transition-duration) var(--timing-function); 
-}
-
-.footer-form__btn:focus,
-.footer-form__btn:hover {
-    cursor: pointer;
+    transition: transform $transitionDuration $timingFunction;
 } 
 
 .footer-form__btn:focus  .footer-form__icon-send {

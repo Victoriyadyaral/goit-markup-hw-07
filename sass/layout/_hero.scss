@@ -9,7 +9,7 @@
     padding-bottom: 200px;
     background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
      url(../images/hero/bg-hero.jpg);
-    background-color: var(--hero-background-color);
+    background-color: $heroBGcolor;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,7 +17,7 @@
 }
 .hero__title {
     margin-bottom: 30px;
-    color: var(--primary-white-color);
+    color: $whiteColor;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 44px;
@@ -29,10 +29,10 @@
 .hero__button {
     padding: 10px 30px;
     border: 1px solid transparent;
-}
 
-.button:hover,
-.button:focus {
+    &:hover,
+    &:focus {
     cursor: pointer;
     background-color: #188CE8;
+}
 }

@@ -1,0 +1,52 @@
+/* Основные сбросы настроек браузера*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+/*Padding для секций*/
+
+.section-padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* body */
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}
+
+/*Margin в списках*/
+
+.list .item:not(:last-child) {
+    margin-right: 30px;
+}

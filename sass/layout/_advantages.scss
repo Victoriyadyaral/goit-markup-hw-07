@@ -1,0 +1,29 @@
+/*ADVANTAGES*/
+
+.advantages__list {
+    display: flex;
+}
+
+.advantages__title {
+    margin-bottom: 10px;
+    color: var(--primary-text-title);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+}
+
+.advantages__text {
+    font-weight: 400;
+}
+
+.advantages__icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}

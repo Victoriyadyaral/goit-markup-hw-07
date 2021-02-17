@@ -1,0 +1,13 @@
+/*LOGO*/
+
+.logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 0;
+    line-height: 1.192;
+    transition: cursor var(--transition-duration) var(--timing-function);
+}

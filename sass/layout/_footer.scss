@@ -29,16 +29,19 @@
 }
 
 .address__list {
+    @extend %list;
     margin-right: 70px;
 }
 
 .address__link {
+    @extend %link;
     color: $whiteColor;
     font-weight: 400;
 }
 
 .address__mail,
 .address__tel {
+    @extend %link;
     color: rgba(255, 255, 255, .6);
     font-weight: 400;
 }
@@ -60,6 +63,7 @@
 }
 
 .join-to-us {
+    @extend %list;
     display: flex;
 }
 

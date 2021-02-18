@@ -5,6 +5,7 @@
 }
 
 .activities__list {
+    @extend %list;
     display: flex;
 }
 

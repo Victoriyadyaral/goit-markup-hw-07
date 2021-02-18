@@ -1,11 +1,12 @@
 /*OUR TEAM*/
 
 .our-team{
+    @extend %section-padding;
     background-color: $mainBGcolor;
-;
 }
 
 .our-team__list {
+    @extend %list;
     display: flex;
 }
 
@@ -40,6 +41,7 @@
 }
 
 .social-links {
+    @extend %list;
     display: flex;
     justify-content: space-between;
 
@@ -55,6 +57,7 @@
 }
 
 .social-links__link {
+    @extend %link;
     width: 100%;
     height: 100%;
     background-color: transparent;

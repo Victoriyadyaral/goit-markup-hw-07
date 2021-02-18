@@ -19,21 +19,6 @@ img {
     display: block;
 }
 
-.link {
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
-}
-
-/*Padding для секций*/
-
-.section-padding {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 /* body */
 
 body {
@@ -47,6 +32,6 @@ body {
 
 /*Margin в списках*/
 
-.list .item:not(:last-child) {
+.item:not(:last-child) {
     margin-right: 30px;
 }

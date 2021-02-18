@@ -10,6 +10,10 @@
 
 /*LOGO*/
 
+.logo {
+    @extend %link;
+}
+
 .logo:hover,
 .logo:focus {
     cursor: pointer;
@@ -29,9 +33,11 @@
 
 .site-nav {
     display: flex;
+    @extend %list;
 }
 
 .site-nav__link{  
+    @extend %link;
     position: relative;
     display: block;
     padding-top: 32px;
@@ -74,6 +80,7 @@
 /*CONTACT-HEADER*/
 
 .contact {
+    @extend %list;
     display: flex;
     margin-left: auto;
 }
@@ -83,6 +90,7 @@
 }
 
 .contact__link {
+    @extend %link;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;

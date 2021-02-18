@@ -1,3 +1,9 @@
+/*PORTFOLIO*/
+
+.gallery {
+    @extend %section-padding;
+}
+
 /*FILTERS*/
 
 .filters-list__button {
@@ -34,6 +40,7 @@
 }
 
 .filters-list {
+    @extend %list;
     display: flex;
     margin-bottom: 50px;
     justify-content: center;

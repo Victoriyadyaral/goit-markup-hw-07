@@ -1,6 +1,11 @@
 /*ADVANTAGES*/
 
+.advantages {
+    @extend %section-padding;
+}
+
 .advantages__list {
+    @extend %list;
     display: flex;
 }
 

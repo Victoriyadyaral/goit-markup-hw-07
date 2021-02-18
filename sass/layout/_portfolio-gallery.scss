@@ -1,6 +1,7 @@
 /*EXAMPLES OF WORKS*/
 
 .examples {
+    @extend %list;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,6 +21,7 @@
 }
 
 .examples__link{
+    @extend %link;
     display: inline-block;
     transition: box-shadow $transitionDuration $timingFunction;
 

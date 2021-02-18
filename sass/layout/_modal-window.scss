@@ -95,6 +95,11 @@
     &:hover {
     cursor: pointer;
 }
+
+    .form__label:focus-within & {
+    border-color: $accentColor;
+    outline: none;
+}
 }
 
 .form__icon-wrap {
@@ -108,15 +113,10 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill $transitionDuration $timingFunction;
-}
 
-.form__label:focus-within .form__input {
-    border-color: $accentColor;
-    outline: none;
-}
-
-.form__label:focus-within .form__icon {
+    .form__label:focus-within & {
     fill: $accentColor;
+}
 }
 
 .form__feedback{
@@ -132,18 +132,18 @@
     &:hover {
     cursor: pointer;
 }
-}
 
-.form__label:focus-within .form__feedback {
+    .form__label:focus-within & {
     border-color: $accentColor;
     outline: none;
 }
 
-.form__feedback::placeholder {
+    &::placeholder {
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
 }
 
 .form__checkbox-wrapper {
@@ -161,13 +161,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
-}
 
-.form__link {
-    color: $accentColor;
-}
-
-.form__checkbox-label::after {
+    &::after {
     position: absolute;
     top: 50%;
     left: 11px;
@@ -181,6 +176,11 @@
     border-radius: 2px;
     border-color: $logoColor;
     transition: border-color $transitionDuration $timingFunction;
+}
+}
+
+.form__link {
+    color: $accentColor;
 }
 
 .form__checkbox:focus+.form__checkbox-label::after{

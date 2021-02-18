@@ -50,6 +50,13 @@
     &:not(:last-child) {
     margin-right: 10px;
 }
+
+    & .social-links__link:hover,
+    & .social-links__link:focus {
+    background-color: $accentColor;
+    outline: none;
+    transform: rotate(360deg);
+}
 }
 
 .social-links__link {
@@ -69,16 +76,9 @@
 .social-links__icon {
     fill: $iconColor;
     transition: fill $transitionDuration $timingFunction;
-}
 
-.social-links__link:hover .social-links__icon,
-.social-links__link:focus .social-links__icon {
+    .social-links__link:hover &,
+    .social-links__link:focus & {
     fill: $whiteColor;
 }
-
-.social-links__item .social-links__link:hover,
-.social-links__item .social-links__link:focus {
-    background-color: $accentColor;
-    outline: none;
-    transform: rotate(360deg);
 }

@@ -73,6 +73,12 @@
     &:not(:last-child) {
     margin-right: 10px;
 }
+
+    & .join-to-us__link:hover,
+    & .join-to-us__link:focus {
+    background-color: $accentColor;
+    outline: none;
+}
 }
 
 .join-to-us__link {
@@ -85,12 +91,6 @@
     align-items: center;
 
     transition: background-color $transitionDuration $timingFunction;
-
-    .join-to-us__item &:hover,
-    .join-to-us__item &:focus {
-    background-color: $accentColor;
-    outline: none;
-}
 }
 
 .join-to-us__icon {
@@ -119,12 +119,12 @@
     background-color: transparent;
     color: $whiteColor;
 }
-}
 
-.footer-form__input::placeholder {
+    &::placeholder {
     @include fontsProperty(400, 16px, 1.25);
     font-family: Roboto;
     color: rgba(255, 255, 255, 0.6);
+}
 }
 
 .footer-form__btn {
@@ -146,8 +146,8 @@
     margin-left: 10px;
     transform: translate(0,0);  
     transition: transform $transitionDuration $timingFunction;
-} 
 
-.footer-form__btn:focus  .footer-form__icon-send {
+    .footer-form__btn:focus  & {
     transform: translate(80px,-40px);
 }
+} 

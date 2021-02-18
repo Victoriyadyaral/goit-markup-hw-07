@@ -11,13 +11,19 @@
     align-items: center;
 }
 
-.clients__item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .clients__item {
     width: 170px;
     height: 90px;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+}
+
+    & .clients__link:hover,
+    & .clients__link:focus {
+    border-color: $accentColor;
+    outline: none;
+}
 }
 
 .clients__link {
@@ -31,20 +37,14 @@
     border: 1px solid $iconColor;
     border-radius: 4px;
     transition: border-color $transitionDuration $timingFunction;
-
-    &:hover .clients__icon,
-    &:focus .clients__icon {
-    fill: $accentColor;
-}
-
-    .clients__item &:hover,
-    .clients__item &:focus {
-    border-color: $accentColor;
-    outline: none;
-}
 }
 
 .clients__icon {
     fill: $iconColor;
     transition: fill $transitionDuration $timingFunction;
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+    fill: $accentColor;
+}
 }

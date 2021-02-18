@@ -52,11 +52,11 @@
 
     transform: translateY(100%);
     transition: transform $transitionDuration $timingFunction;
-}
 
-.examples__link:hover .examples__overlay,
-.examples__link:focus .examples__overlay {
+    .examples__link:hover &,
+    .examples__link:focus & {
     transform: translateY(0);
+}
 }
 
 .examples__title {

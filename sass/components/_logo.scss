@@ -1,13 +1,11 @@
 /*LOGO*/
 
 .logo {
+    @include fontsProperty(700, 0, 1.192);
     display: block;
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
     font-family: $logoFont;
-    font-weight: 700;
-    font-size: 0;
-    line-height: 1.192;
     transition: cursor $transitionDuration $timingFunction;
 }

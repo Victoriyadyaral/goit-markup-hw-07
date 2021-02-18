@@ -7,6 +7,7 @@
 /*FILTERS*/
 
 .filters-list__button {
+    @include fontsProperty(500, 16px, 1.625);
     display: inline-block;
     padding: 6px 22px;
     border-radius: 4px;
@@ -15,9 +16,6 @@
     background-color: #F5F4FA;
     color: $logoColor;
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
     letter-spacing: 0.03em;
     text-align: center;
     cursor: pointer;

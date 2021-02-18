@@ -1,10 +1,8 @@
 /*Стили для h2*/
 
 .title {
+    @include fontsProperty(700, 36px, 1.167);
     margin-bottom: 50px;
     color: $titleColor;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
     text-align: center;
 }

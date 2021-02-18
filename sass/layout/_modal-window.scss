@@ -67,10 +67,8 @@
 }
 
 .form__text {
+    @include fontsProperty(700, 20px, 1.15);
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
     color: $titleColor;
 }
@@ -82,20 +80,16 @@
 }
 
 .form__user-information {
+    @include fontsProperty(400, 12px, 1.1667);
     margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.1667;
     letter-spacing: 0.01em;
 }
 
 .form__input {
+    @include formInput( rgba(33, 33, 33, 0.2));
     padding-left: 42px;
     min-height: 40px;
     width: 100%;
-    border: 1px solid;
-    border-color:  rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
     transition: border-color $transitionDuration $timingFunction;
 
     &:hover {

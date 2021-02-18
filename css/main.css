@@ -85,6 +85,9 @@ body {
   list-style: none;
 }
 
+/*Изменение цвета для половинок логотипа*/
+/*Миксин для form__input*/
+/*Миксин для текстовых свойств*/
 /*Скрытые загаловки*/
 .visually-hidden {
   position: absolute !important;
@@ -710,15 +713,16 @@ body {
 }
 
 .footer-form__input {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.3);
   margin-right: 12px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   min-width: 358px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
   background-color: rgba(33, 150, 243, 0);
 }
 
@@ -842,12 +846,12 @@ body {
 }
 
 .form__input {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: rgba(33, 33, 33, 0.2);
   padding-left: 42px;
   min-height: 40px;
   width: 100%;
-  border: 1px solid;
-  border-color: rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

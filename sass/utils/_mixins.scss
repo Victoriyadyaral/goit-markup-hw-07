@@ -1,0 +1,22 @@
+/*Изменение цвета для половинок логотипа*/
+    
+@mixin logoPart($color) {
+   color: $color;
+   font-size: 26px; 
+}
+
+/*Миксин для form__input*/
+
+@mixin formInput($borderColor) {
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: $borderColor;
+}
+
+/*Миксин для текстовых свойств*/
+
+@mixin fontsProperty ($fontWeight, $fontSize, $lineHeight){
+    font-weight: $fontWeight;
+    font-size: $fontSiz;
+    line-height: $lineHeight;   
+} 

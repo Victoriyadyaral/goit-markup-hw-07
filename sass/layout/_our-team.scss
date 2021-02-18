@@ -23,20 +23,16 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-member__name {    
+.our-team-member__name {
+    @include fontsProperty(500, 16px, 1.188);    
     margin-bottom: 10px;
     color: $titleColor;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.188;
     text-align: center;
 }
 
 .our-team-member__job { 
+    @include fontsProperty(400, 16px, 1.188);
     margin-bottom: 16px;   
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.188;
     text-align: center;
 }
 

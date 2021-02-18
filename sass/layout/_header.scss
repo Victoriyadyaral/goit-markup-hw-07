@@ -20,13 +20,11 @@
 }
 
 .logo__first-part {
-    color: $accentColor;
-    font-size: 26px;
+    @include logoPart($accentColor);
 }
 
 .logo__second-part {
-    color: $logoColor;
-    font-size: 26px;
+    @include logoPart($logoColor);
 } 
 
 /*SITE-NAVIGATION*/

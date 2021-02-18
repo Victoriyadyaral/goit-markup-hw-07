@@ -39,6 +39,7 @@
 }
 
 .examples__overlay {
+    @include fontsProperty(400, 18px, 1.556);
     position: absolute;
     top: 0;
     left: 0;
@@ -48,10 +49,6 @@
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     color: $whiteColor;
-
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.556;
 
     transform: translateY(100%);
     transition: transform $transitionDuration $timingFunction;
@@ -63,19 +60,15 @@
 }
 
 .examples__title {
+    @include fontsProperty(700, 18px, 2);
     margin-bottom: 4px;
     color: $titleColor;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .examples__text {
+    @include fontsProperty(400, 16px, 1.875);
     color: $textColor;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
 }
 
 .examples__description {

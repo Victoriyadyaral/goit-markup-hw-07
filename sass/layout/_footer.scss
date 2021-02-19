@@ -4,7 +4,7 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: $footerBGcolor;
+    background-color: var(--footer-background-color);
 
 }
 .footer__contact {
@@ -34,7 +34,7 @@
 
 .address__link {
     @extend %link;
-    color: $whiteColor;
+    color: var(--primary-white-color);
     font-weight: 400;
 }
 
@@ -58,7 +58,7 @@
     font-weight: 700;
     line-height: 1.1419;
     text-transform: uppercase;
-    color: $whiteColor;
+    color: var(--primary-white-color);
 }
 
 .join-to-us {
@@ -76,7 +76,7 @@
 
     & .join-to-us__link:hover,
     & .join-to-us__link:focus {
-    background-color: $accentColor;
+    background-color: var(--accent-color);
     outline: none;
 }
 }
@@ -90,11 +90,11 @@
     justify-content: center;
     align-items: center;
 
-    transition: background-color $transitionDuration $timingFunction;
+    transition: background-color var(--transition-duration) var(--timing-function);
 }
 
 .join-to-us__icon {
-    fill: $whiteColor;
+    fill: var(--primary-white-color);
 }
 
 /*FOOTER-----SUBSCRIBE*/
@@ -117,7 +117,7 @@
 
     &:focus {
     background-color: transparent;
-    color: $whiteColor;
+    color: var(--primary-white-color);
 }
 
     &::placeholder {
@@ -145,7 +145,7 @@
 .footer-form__icon-send {
     margin-left: 10px;
     transform: translate(0,0);  
-    transition: transform $transitionDuration $timingFunction;
+    transition: transform var(--transition-duration) var(--timing-function);
 
     .footer-form__btn:focus  & {
     transform: translate(80px,-40px);

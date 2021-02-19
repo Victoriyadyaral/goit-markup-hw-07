@@ -6,6 +6,6 @@
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
-    font-family: $logoFont;
-    transition: cursor $transitionDuration $timingFunction;
+    font-family: var(--logo-font);
+    transition: cursor var(--transition-duration) var(--timing-function);
 }

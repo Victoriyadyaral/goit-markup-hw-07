@@ -1,7 +1,7 @@
 /*Стили для header*/
 
 .page-header {
-    background-color: $whiteColor;
+    background-color: var(--primary-white-color);
 }
 
 .page-header__navigation {
@@ -41,17 +41,17 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: $titleColor;
+    color: var(--primary-text-title);
 
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
 
-    transition: color $transitionDuration $timingFunction;;
+    transition: color var(--transition-duration) var(--timing-function);
 
     &:focus,
     &:hover {
-    color: $accentColor;
+    color: var(--accent-color);
 }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .site-nav__link--current {
-    color: $accentColor;
+    color: var(--accent-color);
 
     &::after {
     content: "";
@@ -71,7 +71,7 @@
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: $accentColor;
+    background-color: var(--accent-color);
 }
 }
 
@@ -92,22 +92,22 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: $textColor;
+    color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.143;
     letter-spacing: 0.02em;
-    transition: color $transitionDuration $timingFunction;
+    transition: color var(--transition-duration) var(--timing-function);
     
     &:focus,
     &:hover {
-    color: $accentColor;
+    color: var(--accent-color);
 }
 }
 
 .contact__icon-mail {
     margin-right: 10px;
-    fill: $textColor;
-    transition: fill $transitionDuration $timingFunction;
+    fill: var(--primary-text-color);
+    transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .contact__link-mail{
@@ -122,8 +122,8 @@
 
 .contact__icon-phone {
     margin-right: 10px;
-    fill: $textColor;
-    transition: fill $transitionDuration $timingFunction;
+    fill: var(--primary-text-color);
+    transition: fill var(--transition-duration) var(--timing-function);
 }
 
 .contact__link-phone{

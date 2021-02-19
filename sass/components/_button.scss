@@ -5,10 +5,10 @@
     display: inline-block;
     border-radius: 4px;
     min-width: 200px;
-    color: $whiteColor;
-    background-color: $accentColor;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
     font-family: inherit;
     letter-spacing: 0.06em;
     text-align: center;
-    transition: background-color $transitionDuration $timingFunction;
+    transition: background-color var(--transition-duration) var(--timing-function);
 }

@@ -2,7 +2,7 @@
 
 .our-team{
     @extend %section-padding;
-    background-color: $mainBGcolor;
+    background-color: var(--second-main-background);
 }
 
 .our-team__list {
@@ -18,7 +18,7 @@
 }
 
 .our-team-member {
-    background-color: $whiteColor;
+    background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -26,7 +26,7 @@
 .our-team-member__name {
     @include fontsProperty(500, 16px, 1.188);    
     margin-bottom: 10px;
-    color: $titleColor;
+    color: var(--primary-text-title);
     text-align: center;
 }
 
@@ -53,7 +53,7 @@
 
     & .social-links__link:hover,
     & .social-links__link:focus {
-    background-color: $accentColor;
+    background-color: var(--accent-color);
     outline: none;
     transform: rotate(360deg);
 }
@@ -69,16 +69,16 @@
     justify-content: center;
     align-items: center;
     transform: rotate(0deg);
-    transition: background-color $transitionDuration $timingFunction,
-                transform $transitionDuration $timingFunction;
+    transition: background-color var(--transition-duration) var(--timing-function),
+                transform var(--transition-duration) var(--timing-function);
 }
 
 .social-links__icon {
-    fill: $iconColor;
-    transition: fill $transitionDuration $timingFunction;
+    fill: var(--icon-color);
+    transition: fill var(--transition-duration) var(--timing-function);
 
     .social-links__link:hover &,
     .social-links__link:focus & {
-    fill: $whiteColor;
+    fill: var(--primary-white-color);
 }
 }

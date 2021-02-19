@@ -9,7 +9,7 @@
     padding-bottom: 200px;
     background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
      url(../images/hero/bg-hero.jpg);
-    background-color: $heroBGcolor;
+    background-color: var(--hero-background-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,7 +18,7 @@
 .hero__title {
     @include fontsProperty(900, 44px, 1.364);
     margin-bottom: 30px;
-    color: $whiteColor;
+    color: var(--primary-white-color);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.06em;

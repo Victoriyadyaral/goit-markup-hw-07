@@ -21,7 +21,7 @@
 
     & .clients__link:hover,
     & .clients__link:focus {
-    border-color: $accentColor;
+    border-color: var(--accent-color);
     outline: none;
 }
 }
@@ -34,17 +34,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid $iconColor;
+    border: 1px solid var(--icon-color);
     border-radius: 4px;
-    transition: border-color $transitionDuration $timingFunction;
+    transition: border-color var(--transition-duration) var(--timing-function);
 }
 
 .clients__icon {
-    fill: $iconColor;
-    transition: fill $transitionDuration $timingFunction;
+    fill: var(--icon-color);
+    transition: fill var(--transition-duration) var(--timing-function);
 
     .clients__link:hover &,
     .clients__link:focus & {
-    fill: $accentColor;
+    fill: var(--accent-color);
 }
 }

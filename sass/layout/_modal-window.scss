@@ -10,8 +10,8 @@
     visibility: visible;
 
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity $transitionDuration $timingFunction, 
-                visibility $transitionDuration $timingFunction;
+    transition: opacity var(--transition-duration) var(--timing-function), 
+                visibility var(--transition-duration) var(--timing-function);
 }
 
 
@@ -22,11 +22,11 @@
     transform: translate(-50%, -50%) scale(1);
     width: 528px;
     height: 581px;
-    background-color: $whiteColor;
+    background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     
-    transition: transform $transitionDuration $timingFunction;
+    transition: transform var(--transition-duration) var(--timing-function);
 }
 
 .modal-close-btn {
@@ -37,18 +37,18 @@
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: $whiteColor;
+    background-color: var(--primary-white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    transition: fill $transitionDuration $timingFunction;
+    transition: fill var(--transition-duration) var(--timing-function);
 
     &:hover,
     &:focus {
-    fill: $accentColor;
+    fill: var(--accent-color);
 }
 }
 
@@ -70,7 +70,7 @@
     @include fontsProperty(700, 20px, 1.15);
     margin-bottom: 12px;
     text-align: center;
-    color: $titleColor;
+    color: var(--primary-text-title);
 }
 
 .form__label {
@@ -90,14 +90,14 @@
     padding-left: 42px;
     min-height: 40px;
     width: 100%;
-    transition: border-color $transitionDuration $timingFunction;
+    transition: border-color var(--transition-duration) var(--timing-function);
 
     &:hover {
     cursor: pointer;
 }
 
     .form__label:focus-within & {
-    border-color: $accentColor;
+    border-color: var(--accent-color);
     outline: none;
 }
 }
@@ -112,10 +112,10 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
-    transition: fill $transitionDuration $timingFunction;
+    transition: fill var(--transition-duration) var(--timing-function);
 
     .form__label:focus-within & {
-    fill: $accentColor;
+    fill: var(--accent-color);
 }
 }
 
@@ -127,14 +127,14 @@
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color $transitionDuration $timingFunction;
+    transition: border-color var(--transition-duration) var(--timing-function);
 
     &:hover {
     cursor: pointer;
 }
 
     .form__label:focus-within & {
-    border-color: $accentColor;
+    border-color: var(--accent-color);
     outline: none;
 }
 
@@ -174,26 +174,26 @@
     height: 15px;
     border: 2px solid;
     border-radius: 2px;
-    border-color: $logoColor;
-    transition: border-color $transitionDuration $timingFunction;
+    border-color: var(--primary-logo-color);
+    transition: border-color var(--transition-duration) var(--timing-function);
 }
 }
 
 .form__link {
-    color: $accentColor;
+    color: var(--accent-color);
 }
 
 .form__checkbox:focus+.form__checkbox-label::after{
-    border-color: $accentColor;
+    border-color: var(--accent-color);
     outline: none;
 }
 
 .form__checkbox:checked + .form__checkbox-label::after {
-    background-color: $accentColor;
+    background-color: var(--accent-color);
     background-image: url(../images/modal/icon-check.svg);
     background-size: contain;
     background-origin: border-box;
-    border-color: $accentColor;
+    border-color: var(--accent-color);
 }
 
 

@@ -3,6 +3,6 @@
 .title {
     @include fontsProperty(700, 36px, 1.167);
     margin-bottom: 50px;
-    color: $titleColor;
+    color: var(--primary-text-title);
     text-align: center;
 }
